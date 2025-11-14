@@ -1,6 +1,6 @@
-from extract import extract_data
-from transform import transform_data
-from load import get_engine,load_data
+from Extract.extract import extract_data
+from Transform.transform import transform_data
+from Load.load import get_engine,load_data
 import config
 
 def main():

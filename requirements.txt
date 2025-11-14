@@ -1,0 +1,3 @@
+Pandas
+sqlAlchemy
+psycopg2
