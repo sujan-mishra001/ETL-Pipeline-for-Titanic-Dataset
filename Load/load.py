@@ -1,5 +1,5 @@
 #Connecting to postgressql using sqlachemy
-from sqlalchemy import create_engine,Table,
+from sqlalchemy import create_engine
 
 def get_engine(db_config):
     print("Connecting to DB with config:", db_config)
