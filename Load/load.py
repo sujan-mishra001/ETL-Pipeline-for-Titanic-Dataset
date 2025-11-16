@@ -1,5 +1,5 @@
 #Connecting to postgressql using sqlachemy
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine,Table,
 
 def get_engine(db_config):
     print("Connecting to DB with config:", db_config)
@@ -10,6 +10,7 @@ def get_engine(db_config):
 
 def load_data(df, engine):
     df.to_sql('titanic', engine, if_exists='replace', index=False)
+    
     print("Data loaded successfully")
 
     

@@ -8,6 +8,7 @@ def main():
     df=extract_data("titanic.csv")
     #Using transform_data from trasnform.py to transform extracted data
     df_transform=transform_data(df)
+    
     #Using get_engine from load.py to connect to  postgres database 
     engine=get_engine(config.db_config)
     #Using load_data from load.py to load the trasnformed data into postgres database
